@@ -1,6 +1,10 @@
 const plugin = require('html-webpack-plugin');
 
 module.exports = {
+    output: {
+        filename: 'index.js',
+        libraryTarget:'umd'
+    },
     module: {
         rules: [
             {
